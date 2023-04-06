@@ -1,0 +1,184 @@
+body {
+    background-image: url('Images/back_img2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px 10px 15px;
+    border-radius: 10px;
+}
+
+/* Style the header links */
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 4px;
+}
+  
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.title {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a.header-right:hover {
+    background-color: rgb(221, 221, 221);
+    color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: 0px 10px;
+    border-radius: 5px;
+}
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    color: black;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Fallback color */
+    padding-top: 60px;
+}
+
+.selection {
+    position: relative; /* Stay in place */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0% auto;
+    margin-top: 20px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 40%;
+    border-radius: 10px;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: 20%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    background-color: #f44336;
+}
+
+.loginbtn, .signupbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+select, .sdate {
+    border:none;
+    padding: 10px 20px;
+    border-radius:10px;
+}
+
+.sel_car {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 60%;
+    border-radius: 35px;
+}
+
+table {
+    margin: 1%;
+    width: 98%;
+    font-size:large;
+    text-align: center;
+}
+
+td, th {
+    padding: 9px 0px;
+    border-radius: 5px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(250, 235, 215, 0.5);
+}
+
+.btn {
+    background-color:rgba(255, 255, 255, 0.3); 
+    border-radius: 10px; 
+    color: black; 
+    width: 200px;
+}

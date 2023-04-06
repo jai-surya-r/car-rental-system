@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Car Rental System</title>
+        <link rel="icon" type="image/x-icon" href="Images/racing.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chelsea+Market">
+        <link rel="stylesheet" href="Styles.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <a class="title" style="font-family: Chelsea Market;">
+                <img src="Images/racing.png" style="height: 40px; width: 40px;">
+                DANNY RENTALS
+            </a>
+            <div class="header-right">
+                <a class="active">
+                    <i class="fa fa-fw fa-user"></i>
+                    <button onclick="document.getElementById('id02').style.display='block'" style="width: auto;">Sign Up</button>
+                </a>
+            </div>
+        </div>
+        <div class="register" style="margin-top: 4.5%;">
+            <form class="selection" action="Sec_Page.php" method="post">
+                <div class="container">
+                    <label style="font-size: 25px;"><b>Enter your details</b></label><br><br>
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <button type="submit" class="loginbtn">Login</button>
+                    <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+                </div>
+            </form>
+        </div>
+        <div id="id02" class="modal">
+            <form class="modal-content" action="action_page.php" method="post">
+                <div class="container">
+                    <label style="font-size: 25px;"><b>Sign Up</b></label><br>
+                    <label>Please fill this form to create an account</label><br><br>
+                    <label for="fname"><b>Full name*</b></label>
+                    <input type="text" placeholder="Enter your name" name="fname" required>
+                    <label for="phno"><b>Phone number*</b></label>
+                    <input type="text" placeholder="Enter Phone number" name="phno" required>
+                    <label for="addr"><b>Address</b></label>
+                    <input type="text" placeholder="Enter address" name="addr">
+                    <label for="dl_id"><b>Driving Licence ID*</b></label>
+                    <input type="text" placeholder="Enter DL number" name="dl_id" required>
+                    <label for="dob"><b>DOB*</b></label>
+                    <input type="date" name="dob" required style="width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box;">
+                    <label for="email"><b>Email*</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <label for="psw"><b>Password*</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="psw-repeat"><b>Repeat Password*</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label><br>
+                    <div class="clearfix">
+                        <button type="submit" class="signupbtn">Sign Up</button><br>
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn" style="width: 100%;">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
